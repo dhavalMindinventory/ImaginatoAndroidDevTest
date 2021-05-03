@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_home">Home</string>
+    <string name="title_Favorite">Favorite</string>
+    <string name="no_favroites_data_available">No favorites data available.</string>
+</resources>

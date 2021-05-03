@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favorite"
+    app:startDestination="@id/favoriteFragment">
+
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.imaginato.imaginato_practical.ui.favorite.FavoriteFragment"
+        android:label="Favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.imaginato.imaginato_practical.ui.details.DetailsFragment"
+        android:label="Details" >
+        <argument
+            android:name="user"
+            app:argType="com.imaginato.imaginato_practical.data.randomuser.entity.RandomUserItem" />
+    </fragment>
+</navigation>
